@@ -3,50 +3,55 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="bg-[#242742]">
+  <main class="flex justify-center items-center h-screen">
+    <div class="bg-white max-w-[400px] md:max-w-[800px] grid grid-cols-1 md:grid-cols-12 w-full rounded-xl md:p-5 mx-2">
 
-  <!-- Sign-up form start -->
+      <!-- Left -->
+      <div class="flex flex-col gap-5 py-10 pl-8 pr-12 md:col-span-7 order-2 md:order1">
+        <div>
+          <h1 class="text-5xl font-bold">Stay Updated!</h1>
+        </div>
+        <div>
+          <p>Joined 60,000+ product managers receiving monthly updates on:</p>
+        </div>
+        <div class="flex flex-col gap-3">
+          <div class="flex gap-3 items-center">
+            <img src="./assets/images/icon-list.svg" alt="icon-list">
+            <p>Product discovery and building what matters</p>
+          </div>
+          <div class="flex gap-3 items-center">
+            <img src="./assets/images/icon-list.svg" alt="icon-list">
+            <p>Measuring to ensure updates are a success</p>
+          </div>
+          <div class="flex gap-3 items-center">
+            <img src="./assets/images/icon-list.svg" alt="icon-list">
+            <p>And much more!</p>
+          </div>
+        </div>
+        <div>
+          <form action="#" class="flex flex-col gap-3">
+            <div class="flex flex-col gap-2">
+              <label for="email" class="font-semibold">Email Address</label>
+              <input type="text" name="email" id="email" placeholder="email@company.com" class="border-2 border-gray-400 rounded-md py-2 px-3">
+            </div>
+            <div class="bg-[#242742] text-white py-3 text-center rounded-md">
+              <div name="submit" class="font-semibold">Subscribe to monthly newsletter</div>
+            </div>
+          </form>
+        </div>
+      </div>
 
-  Stay updated!
-
-  Join 60,000+ product managers receiving monthly updates on:
-
-  Product discovery and building what matters
-  Measuring to ensure updates are a success
-  And much more!
-
-  Email address
-  email@company.com
-
-  Subscribe to monthly newsletter
-
-  <!-- Sign-up form end -->
-
-  <!-- Success message start -->
-
-  Thanks for subscribing!
-
-  A confirmation email has been sent to ash@loremcompany.com. 
-  Please open it and click the button inside to confirm your subscription.
-
-  Dismiss message
-
-  <!-- Success message end -->
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+      <!-- Right -->
+      <div class="md:col-span-5 w-full order-1 md:order-2">
+        <img src="./assets/images/illustration-sign-up-desktop.svg" alt="illustration-sign-up-desktop" class="hidden md:inline">
+        <img src="./assets/images/illustration-sign-up-mobile.svg" alt="illustration-sign-up-mobile" class="md:hidden w-full">
+      </div>
+    </div>
+  </main>
 </body>
 </html>
